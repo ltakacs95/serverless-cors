@@ -1,13 +1,16 @@
 exports.cors = () => ({
   status: 200,
   response_headers: {
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
+    'X-Frame-Options': 'SAMEORIGIN'
   },
   data: {}
 })
 exports.externalSource = () => ({
   status: 200,
   response_headers: {
+    'Access-Control-Allow-Origin': '*',
+    'X-Frame-Options': 'SAMEORIGIN',
     'Content-Type': 'application/json'
   },
   data: {
